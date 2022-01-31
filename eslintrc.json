@@ -7,7 +7,6 @@
         }
     },
     "rules": {
-        "semi": "error",
-        "quotes": ["error", "single"]
+        "semi": "error"
     }
 }
