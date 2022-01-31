@@ -35,7 +35,7 @@ function clock () {
     minutes = '0' + minutes;
   }
 
-  document.querySelector('.clock_label').innerHTML = 'Es ist ' + hours + ':' + minutes + ':' + seconds + ' Uhr.';
+  document.querySelector('.clock-label').innerHTML = 'Es ist ' + hours + ':' + minutes + ':' + seconds + ' Uhr.';
 }
 
 function wochentag () {
@@ -43,5 +43,5 @@ function wochentag () {
   const wochentag = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
   const day = date.getDay();
 
-  document.querySelector('.week_label').innerHTML = 'An einem ' + wochentag[day] + '.';
+  document.querySelector('.week-label').innerHTML = 'An einem ' + wochentag[day] + '.';
 }
