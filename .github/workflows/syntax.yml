@@ -1,5 +1,8 @@
 name: Check JS Syntax
 
+###########################################
+# Start the job on push outside of master #
+###########################################
 on:
   push:
     branches-ignore: [main]
@@ -7,20 +10,31 @@ on:
   pull_request:
     branches: [main]
 
+###############
+# Set the Job #
+###############
 jobs:
   build:
     name: Lint Code Base
     runs-on: ubuntu-latest
-
+    ##################
+    # Load all steps #
+    ##################
     steps:
+      ##########################
+      # Checkout the code base #
+      ##########################
       - name: Checkout Code
         uses: actions/checkout@v2
         with:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
 
+      ################################
+      # Run Linter against code base #
+      ################################
       - name: Lint Code Base
-        uses: github/super-linter@v3
+        uses: github/super-linter@v3.17.0
         env:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
