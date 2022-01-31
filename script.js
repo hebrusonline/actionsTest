@@ -39,11 +39,12 @@ function clock () {
 
   document.querySelector('.clock-label').innerHTML = 'Es ist ' + hours + ':' + minutes + ':' + seconds + ' Uhr.';
 }
-
+/*
 function wochentag () {
   const date = new Date();
-  const wochentag = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
-  const day = date.getDay();
+  const wochentag = ['Sonntag', "Montag", 'Dienstag', 'Mittwoch', "Donnerstag", 'Freitag', 'Samstag'];
+  const day = date.getDay()
 
   document.querySelector('.week-label').innerHTML = 'An einem ' + wochentag[day] + '.';
 }
+*/

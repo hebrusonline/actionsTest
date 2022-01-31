@@ -58,6 +58,6 @@ jobs:
             destination_branch: "main"
             pr_title: "Pulling ${{github.ref}} into main"
             pr_body: "*Automated PR*"
-            pr_reviwer: "hebrusonline"
+            pr_reviewer: "hebrusonline"
             pr_draft: true
             github_token: ${{ secrets.GITHUB_TOKEN }}
