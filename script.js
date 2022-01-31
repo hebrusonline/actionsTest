@@ -1,4 +1,4 @@
-/* setup() is called upon html rendering */
+/* setup is called upon html rendering */
 function setup () {
   // initialize clock
   clock();
