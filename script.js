@@ -23,7 +23,7 @@ function clock () {
   const second = seconds * 6;
   
   document.querySelector('.hour').style.transform = `rotate(${hour}deg)`;
-  document.querySelector(".minute").style.transform = `rotate(${minute}deg)`;
+  document.querySelector('.minute').style.transform = `rotate(${minute}deg)`;
   document.querySelector('.second').style.transform = `rotate(${second}deg)`;
   
   if (seconds < 10){
@@ -39,8 +39,8 @@ function clock () {
 
 function wochentag () {
   const date = new Date();
-  const wochentag = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
-  const day = date.getDay();
+  const wochentag = ["Sonntag", 'Montag', 'Dienstag', "Mittwoch", 'Donnerstag', 'Freitag', 'Samstag'];
+  const day = date.getDay()
 
   document.querySelector('.week_label').innerHTML = 'An einem ' + wochentag[day] + '.';
 }
