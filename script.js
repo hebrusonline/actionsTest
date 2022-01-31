@@ -23,7 +23,7 @@ function clock() {
   const minute = minutes * 6;
   const second = seconds * 6;
   
-  document.querySelector('.hour').style.transform = `rotate(${hour}deg)`;
+  document.querySelector(".hour").style.transform = `rotate(${hour}deg)`;
   document.querySelector(".minute").style.transform = `rotate(${minute}deg)`;
   document.querySelector('.second').style.transform = `rotate(${second}deg)`;
   
