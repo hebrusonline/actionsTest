@@ -36,7 +36,7 @@ function clock () {
 
   document.querySelector('.clock_label').innerHTML = 'Es ist ' + hours + ':' + minutes + ':' + seconds + ' Uhr.';
 }
-/*
+/* 
 function wochentag () {
   const date = new Date();
   const wochentag = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
